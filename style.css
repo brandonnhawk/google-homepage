@@ -1,0 +1,92 @@
+html {
+    height: 100%;
+    width: 100%;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas: 'about store . gmail images menu sign-in';
+    
+}
+
+a {
+    text-decoration: none;
+    color: rgba(0,0,0,0.87);
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#About {
+    grid-area: about;justify-self: center; align-self: center;
+}
+#Store { 
+    grid-area: store;justify-self: center; align-self: center;
+}
+#Gmail {
+    grid-area: gmail;justify-self: center; align-self: center;
+}
+#Images {
+    grid-area: images;justify-self: center; align-self: center;
+}
+#Menu { 
+    grid-area: menu;justify-self: center; align-self: center;
+}
+#Sign-In {
+    grid-area: sign-in;justify-self: center; align-self: center;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:200px 70px 70px 200px ;
+    grid-template-areas:'. logo .' 
+    ". search ."
+    ". flexbox ."
+    ". covid .";
+}
+
+#logo {
+    grid-area: logo;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+}
+#search {
+    grid-area: search;
+    border-color: darkgray;
+    height: 30px;
+    align-self: center;
+    
+}
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+#covid {
+    grid-area: covid;
+    text-align: center;
+    color: blue
+}
+#footer {
+    display: grid;
+    grid-template-columns: 100px 100px 500px 100px 100px 100px;
+    grid-template-areas: "advertising business . privacy terms settings";
+}
+#advertising {
+    grid-area: advertising;
+}
+#business {
+    grid-area: business:;
+}
+#privacy {
+    grid-area: privacy;
+}
+#terms {
+    grid-area: terms;
+}
+#settings {
+    grid-area: settings;
+}
